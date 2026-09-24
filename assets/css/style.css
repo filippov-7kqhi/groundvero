@@ -443,3 +443,22 @@ h1,h2{font-weight:500}
 /* four trust points wrap to three rows on a phone; the rest are repeated
    in the hero and footer, so the bar keeps only the first there */
 @media(max-width:600px){.topbar span:not(:first-child){display:none}}
+
+/* ---- inner pages: a single centred reading column ---- */
+.pagehead{text-align:center;padding:3.6rem 0 2.6rem;background:linear-gradient(180deg,#e7f0ec,var(--bg))}
+.pagehead .wrap>p,.pagehead .muted{margin-inline:auto}
+.pagehead .crumbs{justify-content:center}
+.pagehead .idcard{text-align:left;max-width:640px;margin-inline:auto}
+.policy{grid-template-columns:1fr;max-width:760px;gap:1.6rem}
+.policy__toc{position:static;background:transparent;border:0;padding:0;text-align:center}
+.policy__toc h4{display:none}
+.policy__toc ul{display:flex;flex-wrap:wrap;justify-content:center;gap:.5rem}
+.policy__toc a{display:inline-block;background:#fff;border:1px solid var(--line);border-radius:999px;padding:.4rem .95rem;font-size:.86rem}
+.policy__toc a:hover{border-color:var(--brand)}
+.policy__body{max-width:none;font-size:1.04rem;line-height:1.8}
+.policy__body h2{font-weight:500;font-size:1.7rem}
+.grid-2:has(form.form){grid-template-columns:.8fr 1.2fr;gap:2.4rem}
+.grid-2:has(form.form)>div:first-child{order:2;background:#fff;border-radius:24px;padding:2rem;box-shadow:0 12px 36px rgba(14,31,28,.08)}
+.grid-2:has(form.form) .form{max-width:none}
+@media(max-width:760px){.grid-2:has(form.form){grid-template-columns:1fr}.grid-2:has(form.form)>div:first-child{order:0;padding:1.3rem}}
+.summary,.checkout-panel{border:0;box-shadow:0 12px 36px rgba(14,31,28,.08)}
