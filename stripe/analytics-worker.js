@@ -33,8 +33,10 @@ const KEEP = 7 * DAY;
 // are created (see README.md). These MUST stay placeholders until then: the
 // inherited values belonged to another store and would charge its prices.
 const PRICES = {
-  'GV-CREX6M': 'price_xxx', 'GV-DP5000': 'price_xxx',
-  'GV-TW1375G': 'price_xxx', 'GV-360SW': 'price_xxx',
+  'GV-CREX6M': 'price_1UJ2XZGd7L8SA737aHuTR5T9',
+  'GV-DP5000': 'price_1UJ2XcGd7L8SA7377YLunQoz',
+  'GV-TW1375G': 'price_1UJ2XfGd7L8SA737RP7xtRKa',
+  'GV-360SW': 'price_1UJ2XhGd7L8SA737xuGzUzAp',
 };
 
 export default {
