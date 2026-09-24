@@ -32,9 +32,9 @@ window.SITE_CONFIG = {
   // One Stripe Payment Link per machine. Blank = that machine routes to an
   // enquiry instead of pretending to take payment.
   paymentLinks: {
-    "GV-CREX6M": "",
-    "GV-DP5000": "",
-    "GV-TW1375G": "",
-    "GV-360SW": ""
+    "GV-CREX6M": "https://buy.stripe.com/6oU14ndoW0k63ow9nm6c00k",
+    "GV-DP5000": "https://buy.stripe.com/3cI14n84C9UGbV26ba6c00l",
+    "GV-TW1375G": "https://buy.stripe.com/3cI9ATckSd6S6AI6ba6c00m",
+    "GV-360SW": "https://buy.stripe.com/00weVdet0eaW3ow9nm6c00n"
   }
 };
