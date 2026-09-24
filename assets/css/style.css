@@ -374,3 +374,72 @@ legend{padding:0 .5rem;font-weight:800;font-size:.86rem;letter-spacing:.08em;tex
 .cta h2{color:#f4f7ef}
 .cta .btn--ghost{border-color:#f4f7ef;color:#f4f7ef;background:rgba(255,255,255,.10)}
 .cta .btn--ghost:hover{background:#f4f7ef;color:#0d2b27}
+
+/* ==== IDENTITY LAYER: GroundVero - editorial daylight ====================== */
+/* A magazine layout: logo centred over the nav, a centred serif headline with a
+   wide photograph set beneath it, borderless soft cards, a dark-teal footer,
+   and product pages with the details on the left and the gallery on the right. */
+:root{--radius:22px}
+h1,h2{font-weight:500}
+.logo{text-transform:none;letter-spacing:-.01em}
+.topbar{background:var(--bg);color:var(--ink-2);border-bottom:1px solid var(--line);font-weight:600;font-size:.8rem}
+.topbar span:first-child{color:var(--brand)}
+.header{background:rgba(246,248,247,.97)}
+@media(min-width:901px){
+  .header{position:relative;backdrop-filter:none;-webkit-backdrop-filter:none}
+  .header__in{flex-direction:column;gap:.55rem;padding:1rem 0 .8rem}
+  .logo{font-size:2.1rem}
+  .nav{gap:2.4rem}
+  .nav a{font-family:var(--head);font-weight:500;font-size:1.08rem;color:var(--ink)}
+}
+
+.hero{padding:3.2rem 0 0;background:linear-gradient(180deg,#e7f0ec 0%,var(--bg) 70%)}
+.hero__grid{grid-template-columns:1fr;gap:2.2rem;text-align:center;justify-items:center}
+.hero h1{font-size:clamp(2.4rem,5.6vw,4.2rem);letter-spacing:-.025em}
+.hero p.lead{margin-inline:auto;max-width:60ch}
+.hero__cta,.hero__pills{justify-content:center}
+.hero__media{width:100%;border:0;border-radius:32px 32px 0 0;box-shadow:0 -10px 60px rgba(15,118,110,.12)}
+.hero__media img{width:100%;aspect-ratio:21/9;object-fit:cover;object-position:50% 40%}
+@media(max-width:900px){
+  .hero{padding-top:2.6rem}
+  .hero__media{border-radius:20px 20px 0 0}
+  .hero__media img{aspect-ratio:4/3}
+}
+
+.btn--ghost{background:transparent;border-color:rgba(14,31,28,.22);color:var(--ink)}
+.btn--ghost:hover{background:var(--ink);border-color:var(--ink);color:#fff}
+.btn--ghost.is-added{background:var(--brand);border-color:var(--brand);color:#fff}
+
+.card{border:0;background:#fff;box-shadow:0 1px 2px rgba(14,31,28,.06),0 12px 32px rgba(14,31,28,.07)}
+.card:hover{transform:translateY(-6px);box-shadow:0 1px 2px rgba(14,31,28,.06),0 24px 48px rgba(14,31,28,.13)}
+.card__media{margin:.75rem .75rem 0;border-radius:16px;overflow:hidden}
+.card__tag{background:#fff;color:var(--brand)}
+
+.band{background:#eaf2ef;border-block:0}
+.tile{border:0;box-shadow:0 10px 28px rgba(14,31,28,.06)}
+.tile__ico{border-radius:50%}
+.step{background:transparent;border:0;border-left:2px solid var(--brand);border-radius:0;padding:.3rem 0 .3rem 1.4rem}
+.step::before{font-style:italic;opacity:.9}
+.acc{border:0;border-top:1px solid var(--line);background:transparent;border-radius:0}
+.acc summary{font-family:var(--head);font-weight:500;font-size:1.14rem;padding-inline:0}
+.acc .acc__body{padding-inline:0}
+
+.cta{background:var(--brand);border:0;border-radius:32px;color:#fff}
+.cta p{color:#d5ebe7}
+.cta .btn--primary{background:#fff;color:var(--brand)}
+.cta .btn--primary:hover{background:#e7f3f0}
+.cta .btn--ghost{border-color:rgba(255,255,255,.55);color:#fff}
+.cta .btn--ghost:hover{background:#fff;border-color:#fff;color:var(--brand)}
+
+.footer{--bg-2:#0d2b27;--bg-3:#133a35;--line:#1f4b45;--ink:#eef6f4;--ink-2:#b7d1cb;--ink-3:#8fb2ab;
+  background:var(--bg-2);color:var(--ink);border-top:0}
+.footer .logo b{color:#5eead4}
+
+.priceblock{border:0;background:#eaf2ef}
+@media(min-width:981px){
+  .pdp__grid{grid-template-columns:.9fr 1.1fr}
+  .pdp__grid>.gallery{order:2}
+}
+/* four trust points wrap to three rows on a phone; the rest are repeated
+   in the hero and footer, so the bar keeps only the first there */
+@media(max-width:600px){.topbar span:not(:first-child){display:none}}
